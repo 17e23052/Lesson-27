@@ -1,14 +1,11 @@
-print("Enter your username:")
-username = input()
-if "20" in username:
-  print("You are in year 7")
-elif "19" in username:
-  print("You are in year 8")
-elif "18" in username:
-  print("You are in year 9")
-elif "17" in username:
-  print("You are in year 10")
-elif "16" in username:
-  print("You are in year 11")
-else:
-  print("No year group found")
+message = ""
+not_done = True
+while not_done:
+  print("Enter a decimal number to be converted or enter 'done' if you are done:")
+  number = input().lower()
+  letter = chr(number)
+  message = message + letter
+  if number == "done":
+    not_done = False
+print("Message:")
+print(message)
