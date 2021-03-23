@@ -1,0 +1,8 @@
+print("What year did you start in?")
+year = int(input())
+print("What is your surname?")
+surname = input()
+print("What is your first name?")
+first_name = input()
+print("Username:")
+print(f"{year - 2000}{surname}{first_name[0]}")
