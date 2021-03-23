@@ -1,8 +1,14 @@
-print("What year did you start in?")
-year = int(input())
-print("What is your surname?")
-surname = input()
-print("What is your first name?")
-first_name = input()
-print("Username:")
-print(f"{year - 2000}{surname}{first_name[0]}")
+print("Enter your username:")
+username = input()
+if "20" in username:
+  print("You are in year 7")
+elif "19" in username:
+  print("You are in year 8")
+elif "18" in username:
+  print("You are in year 9")
+elif "17" in username:
+  print("You are in year 10")
+elif "16" in username:
+  print("You are in year 11")
+else:
+  print("No year group found")
